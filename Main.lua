@@ -2,6 +2,6 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     if is_synapse_function then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/IEEAS/PnegusHub/main/BloxFruitSynapse.lua"))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/IEEAS/PnegusHub/main/BloxFruitSynapse.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IEEAS/PnegusHub/main/BloxFruitFreeExploit.lua"))()
     end
 end
