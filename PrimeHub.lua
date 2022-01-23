@@ -1,3 +1,6 @@
+if game.PlaceId == 2753915549 or placeId == 4442272183 or placeId == 7449423635 then
+wait(2)
+  
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
