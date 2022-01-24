@@ -1,4 +1,4 @@
-if game.PlaceID == 2753915549 or PlaceID == 4442272183 or PlaceID ==7449423635
+if game.PlaceID == 2753915549 or PlaceID == 4442272183 or PlaceID == 7449423635 then
 
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
