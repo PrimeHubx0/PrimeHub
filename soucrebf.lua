@@ -87,7 +87,7 @@ end
 
 
 
-function Flux:Window(text, bottom,mainclr,toclose)
+function Flux:Window(text,bottom,mainclr,toclose)
 	CloseBind = toclose or Enum.KeyCode.RightControl
 	PresetColor = mainclr or Color3.fromRGB(66, 134, 255)
 	local fs = false
