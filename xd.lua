@@ -72,8 +72,8 @@ function Library:AddWindow(name)
     function Tab:Page(name)
         local TabList = Instance.new("Frame")
         local TabListFrame = Instance.new("UICorner")
+        local UIListLayout = Instance.new("UIListLayout")
         local Tab = Instance.new("TextButton")
-        local TabLayout = Instance.new("UIGridLayout")
         local ScrollingFrame = Instance.new("ScrollingFrame")
 
         TabList.Name = "TabList"
@@ -86,25 +86,23 @@ function Library:AddWindow(name)
         TabListFrame.Name = "TabListFrame"
         TabListFrame.Parent = TabList
         
+        UIListLayout.Parent = TabList
+        UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+        UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+        UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+        
         Tab.Name = "Tab"
         Tab.Parent = TabList
         Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Tab.BackgroundTransparency = 1.000
-        Tab.Position = UDim2.new(0.00914634392, 0, 0.115384616, 0)
-        Tab.Size = UDim2.new(0, 87, 0, 20)
+        Tab.Position = UDim2.new(0.027439028, 0, 0, 0)
+        Tab.Size = UDim2.new(0, 63, 0, 26)
         Tab.Font = Enum.Font.GothamBold
-        Tab.Text = name
+        Tab.Text = "Tab"
         Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
         Tab.TextScaled = true
         Tab.TextSize = 14.000
         Tab.TextWrapped = true
-        
-        ScrollingFrame.Parent = Tab
-        ScrollingFrame.Active = true
-        ScrollingFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-        ScrollingFrame.BorderColor3 = Color3.fromRGB(43, 43, 43)
-        ScrollingFrame.Position = UDim2.new(-0.068999894, 0, 1.54999995, 0)
-        ScrollingFrame.Size = UDim2.new(0, 656, 0, 239)
     end
     return Tab
 end
