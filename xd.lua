@@ -98,7 +98,7 @@ function Library:AddWindow(name)
         Tab.Position = UDim2.new(0.027439028, 0, 0, 0)
         Tab.Size = UDim2.new(0, 63, 0, 26)
         Tab.Font = Enum.Font.GothamBold
-        Tab.Text = "Tab"
+        Tab.Text = name
         Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
         Tab.TextScaled = true
         Tab.TextSize = 14.000
